@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn .6s ease-in-out;
+}
+
+/* subtle glow animation for icons */
+@keyframes glow {
+  0% { opacity: .8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.08); }
+  100% { opacity: .8; transform: scale(1); }
+}
+
+.animate-glow {
+  animation: glow 3s infinite ease-in-out;
+}
